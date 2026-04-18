@@ -124,8 +124,8 @@ img {
   padding: 16px 0;
 }
 
-.header-nav-list,
-.header-contacts-list {
+.header-nav,
+.header-contacts {
   display: none;
 }
 
@@ -144,6 +144,11 @@ img {
   .header-logo {
     padding: 24px 0;
     margin-right: 120px;
+  }
+
+  .header-nav,
+  .header-contacts {
+    display: block;
   }
 
   .header-nav-list {
@@ -447,6 +452,13 @@ img {
   padding-block: 96px;
 }
 
+@media screen and (min-width: 768px) {
+  .team .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .team {
     padding-block: 120px;
@@ -468,7 +480,8 @@ img {
 @media screen and (min-width: 768px) {
   .team-list {
     gap: 64px 24px;
-    padding: 0 108px;
+    padding: 0;
+    justify-content: center;
   }
 }
 
@@ -476,12 +489,11 @@ img {
   .team-list {
     gap: 24px;
     flex-wrap: nowrap;
-    padding: 0;
   }
 }
 
 .team-item {
-  width: 264px;
+  max-width: 264px;
   border-radius: 0 0 4px 4px;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -1168,10 +1180,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-}
-
-.check-text {
-  display: block;
 }
 
 .modal-label-policy {
