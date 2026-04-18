@@ -474,14 +474,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  padding: 0 16px;
+  padding: 0;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .team-list {
     gap: 64px 24px;
-    padding: 0;
-    justify-content: center;
   }
 }
 
@@ -716,6 +715,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
+    max-width: 584px;
   }
 
   .footer-section {
@@ -729,6 +729,7 @@ img {
     flex-wrap: nowrap;
     align-items: baseline;
     gap: 0;
+    max-width: 1158px;
   }
 }
 
