@@ -112,6 +112,12 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .header-container {
+    justify-content: flex-start;
+  }
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -143,12 +149,15 @@ img {
 
   .header-logo {
     padding: 24px 0;
-    margin-right: 120px;
   }
 
   .header-nav,
   .header-contacts {
     display: block;
+  }
+
+  .header-nav {
+    margin-left: 120px;
   }
 
   .header-nav-list {
@@ -198,7 +207,7 @@ img {
 
   .header-contacts {
     margin-left: auto;
-    padding: 16px 0;
+    padding: 0;
   }
 
   .header-contacts-list {
@@ -450,13 +459,6 @@ img {
 .team {
   background-color: #f4f4fd;
   padding-block: 96px;
-}
-
-@media screen and (min-width: 768px) {
-  .team .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 @media screen and (min-width: 1158px) {
